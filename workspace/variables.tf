@@ -1,0 +1,13 @@
+variable "project" {
+    type = string
+    default = "roboshop"
+}
+
+variable "instance_type" {
+    type = map
+    default = {
+        dev = "t3.micro"
+        uat = "t3.small"
+        prod = "t3.medium" 
+    }
+}
